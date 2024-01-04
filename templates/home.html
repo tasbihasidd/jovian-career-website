@@ -17,12 +17,15 @@
 </head>
 
 <body>
+    {% include 'nav.html' %}
+    <img class="img-fluid" src='https://jovian-career-website--tasbihaasiddiqu.repl.co/static/banner.jpg' id='banner' height=320>
     <div class='container'>
         <h1 class="text-center mt-2 mb-4">{{company_name}} Careers</h1>
-        <img class="img-fluid" src='https://jovian-career-website--tasbihaasiddiqu.repl.co/static/banner.jpg'
-            id='banner' height=320>
+            
 
         <h2 class="text-center mt-2 mb-4">About Jovian</h2>
+       <div class='row'>
+         <div class='col-6'>
         <p class="lead">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -31,7 +34,11 @@
             Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
             Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-
+         </div>
+         <div class='col-6'>
+         <img src="static/jud-mackrill-Of_m3hMsoAA-unsplash.jpg" style='height:320px;'
+           </div>
+       </div>
         <h2 class="text-center mt-2 mb-4">Opening Positions</h2>
         <div>
          <!-- using flask template for dynamic driven data  -->
@@ -55,10 +62,11 @@
           </div>
 
         <div class='text-center'>
-            <button class="btn btn-primary">Contact Us</button>
+             class="btn btn-primary">Contact Us</button>
             <p class="mt-4">Copyright 2022, Jovian</p>
         </div>
     </div>
+  {% include 'footer.html' %}
 </body>
 
 </html>
